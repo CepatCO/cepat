@@ -1,6 +1,6 @@
-# Febrilian.com
+# CepatCo
 
-Nextgen, built using Next.js/React/MDX
+Low-maintenance online shop platform
 
 ## Built Using
 
