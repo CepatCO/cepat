@@ -1,0 +1,26 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/projects",
+      "destination": "/about"
+    },
+    {
+      "source": "/twitter",
+      "destination": "https://twitter.com/febrilian__"
+    },
+    {
+      "source": "/instagram",
+      "destination": "https://instagram.com/febrilian"
+    },
+    {
+      "source": "/cepat",
+      "destination": "https://cepat.co"
+    },
+    {
+      "source": "/risetku",
+      "destination": "https://risetku.com"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://febrilian.com/sitemap.xml
