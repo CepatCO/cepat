@@ -1,8 +1,9 @@
 import { NextSeo, ArticleJsonLd } from 'next-seo';
 
+
 const BlogSeo = ({ title, summary, publishedAt, url, image }) => {
   const date = new Date(publishedAt).toISOString();
-  const featuredImage = {
+  const featuredImage: any = {
     url: `https://febrilian.com${image}`,
     alt: title
   };

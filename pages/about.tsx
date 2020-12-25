@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 
-import Container from '@/components/Container';
+import Container from '../components/Container';
 
 const Talk = ({ title, link, children }) => (
   <>

@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-
 const ExternalLink = ({ href, children }) => (
   <a
     className="text-sm text-gray-500 hover:text-gray-600 transition"

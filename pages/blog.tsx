@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { NextSeo } from 'next-seo';
 
-import Container from '@/components/Container';
-import BlogPost from '@/components/BlogPost';
-import { getAllFilesFrontMatter } from '@/lib/mdx';
+import Container from '../components/Container';
+import BlogPost from '../components/BlogPost';
+import { getAllFilesFrontMatter } from '../lib/mdx';
 
 const url = 'https://febrilian.com/blog';
 const title = 'Blog – Febrilian Kristiawan';

@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { parseISO, format } from 'date-fns';
-import Container from '@/components/Container';
-import BlogSeo from '@/components/BlogSeo';
+import Container from '../components/Container';
+import BlogSeo from '../components/BlogSeo';
 
 
 export default function BlogLayout({ children, frontMatter }) {

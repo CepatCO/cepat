@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
-
-import Footer from '@/components/Footer';
+import Footer from '../components/Footer';
+import { AuthContext } from '../providers/Auth';
 
 export default function Container({ children }) {
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState<boolean>(false);
   const { theme, setTheme } = useTheme();
+  const { currentUser } = useContext(AuthContext);
 
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
@@ -42,11 +43,10 @@ export default function Container({ children }) {
           <NextLink href="/">
             <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Home</a>
           </NextLink>
-          <NextLink href="/blog">
-            <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Blog</a>
-          </NextLink>
-          <NextLink href="/about">
-            <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">About</a>
+          <NextLink href={currentUser ? '/dashboard' : '/login'}>
+            <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">
+              {currentUser ? 'Dashboard' : 'Login'}
+            </a>
           </NextLink>
         </div>
       </nav>

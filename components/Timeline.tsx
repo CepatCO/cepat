@@ -51,15 +51,14 @@ const FullTimeline = () => (
     <Divider />
     <Year>2016</Year>
     <ul>
-      <Step title="Still Doing Competitive Programming">
-        C++ for life
-      </Step>
+      <Step title="Still Doing Competitive Programming">C++ for life</Step>
     </ul>
     <Divider />
     <Year>2015</Year>
     <ul>
       <Step title="One of My First Real Codes">
-        Got into competitive programming in highschool. Used C++ to solve problems Codeforces, Kattis, etc.
+        Got into competitive programming in highschool. Used C++ to solve
+        problems Codeforces, Kattis, etc.
       </Step>
     </ul>
     <Divider />
@@ -150,7 +149,7 @@ const FullTimeline = () => (
     <Divider /> */}
     <Year>1999</Year>
     <ul>
-      <Step title="Born 👶🏼🍼" />
+      <Step title="Born 👶🏼🍼" children="Born in February 22" />
     </ul>
   </>
 );
